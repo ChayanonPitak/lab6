@@ -3,6 +3,9 @@ using namespace std;
 
 char before(char x){
 	//Write your function definition here
+	if (x > 90 || x < 65) return '0';
+	else if (x == 65) return 'Z';
+	return --x;
 }
 
 int main(){
